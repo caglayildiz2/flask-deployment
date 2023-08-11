@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: flask
-        image: harbor.tmc.datamarket.local/flask/flask:latest
+        image: harbor.tmc.datamarket.local/flask/flask:1:latest
         ports:
         - containerPort: 5000
 
