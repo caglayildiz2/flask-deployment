@@ -16,7 +16,7 @@ node {
                         sh "git config user.name caglayildiz2"
                         //sh "git switch master"
                         sh "cat deployment.yaml"
-                        sh "sed -i 's+harbor.tmc.datamarket.local/flask/+harbor.tmc.datamarket.local/flask/flask:${env.BUILD_NUMBER}+g' deployment.yaml"
+                        sh "sed -i 's+harbor.tmc.datamarket.local/flask/flask+harbor.tmc.datamarket.local/flask/flask:${env.BUILD_NUMBER}+g' deployment.yaml"
                         sh "cat deployment.yaml"
                         sh "git add ."
                         sh "git commit -m 'Done by Jenkins Job changemanifest: ${env.BUILD_NUMBER}'"
